@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Register App</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h1 class="text-center mb-4 text-dark fw-bold">Student Register App (Akeel Salman)</h1>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <!-- Form -->
+        <form id="studentForm" class="card p-4 shadow border border-2 rounded-4">
+          <div class="mb-3">
+            <label for="studentName" class="form-label fw-semibold">Student Name:</label>
+            <input type="text" id="studentName" class="form-control" placeholder="Enter student name" required>
+          </div>
+          <div class="mb-3">
+            <label for="course" class="form-label fw-semibold">Course:</label>
+            <input type="text" id="course" class="form-control" placeholder="Enter course name" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-success px-4 py-1 rounded-pill fw-semibold">
+              Add Student
+            </button>
+          </div>
+        </form>
+
+        <!-- Student List -->
+        <ul id="studentList" class="list-group mt-4 shadow-sm rounded-3"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
